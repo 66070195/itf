@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username").innerHTML = document.getElementById("input-username").value + "'s Gallery";
+        }
+        function setProfileImage(){
+            document.getElementById("image").style.backgroundImage = "url(" + document.getElementById("input-image").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="profile">
+            <div class="profile-img" id="image"></div>
+            <div class="notification">3</div>
+        </div>
+        <div class="username">
+            <a href="https://www.google.com" target="_blank" style="text-decoration: none; color: black;">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;" id="username">North's Gallery</h1>
+            </a>
+        </div>
+        <div class="input-txt">
+            <div><label style="font-family: Arial, Helvetica, sans-serif; font-weight: 400;">Set the username :</label><input style="margin-left: 10px; height: 20px; font-size: medium; font-family: Arial, Helvetica, sans-serif;" type="text" 
+                id="input-username"><button style="border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-left: 10px;" id="button-username" onclick="setUsername()">set</button></div>
+            <div><label style="font-family: Arial, Helvetica, sans-serif; font-weight: 400;">Set the profile image URL :</label><input style="margin-left: 10px; height: 20px; font-size: medium; font-family: Arial, Helvetica, sans-serif;" type="text" 
+                id="input-image"><button style="border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-left: 10px;" id="button-image" onclick="setProfileImage()">set</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img" style="background-image: url(img/IMG_4341.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_4356.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_4429.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_4458.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_4844.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_4997.jpeg); grid-row: span 2 / span 2;"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_5091.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_5103.jpeg); "></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_5206.jpeg);"></div>
+            <div class="gallery-img" style="background-image: url(img/IMG_5208.jpeg); grid-column: span 2 / span 2;"></div>
+        </div>
+    </main>
+</body>
+</html>
